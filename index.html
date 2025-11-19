@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Chronicle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="app-container">
+        <!-- Newsstand (Left Rail) -->
+        <nav id="newsstand">
+            <h2 class="newsstand-title">Archives</h2>
+            <div id="issue-list">
+                <!-- Issues injected here -->
+            </div>
+        </nav>
+
+        <!-- Main Paper View -->
+        <div id="paper-wrapper">
+            <div class="paper-container" id="main-paper">
+                <header class="masthead">
+                    <div class="meta-header">
+                        <span class="issue-details" id="paper-vol">Vol. 1, No. 1</span>
+                        <span class="date-display" id="paper-date">November 19, 2025</span>
+                        <span class="price">Price: 5 Gold</span>
+                    </div>
+                    <h1 class="brand-title">The Daily Chronicle</h1>
+                    <div class="motto">"Adventures in Print"</div>
+                    <hr class="header-line">
+                </header>
+
+                <main class="main-content">
+                    <article class="lead-story">
+                        <div class="article-header">
+                            <span class="tag" id="lead-tag">Breaking News</span>
+                            <h2 class="headline" id="lead-headline">Loading...</h2>
+                            <p class="sub-headline" id="lead-subhead">Please wait while we fetch the latest news.</p>
+                            <div class="byline">By <span class="author" id="lead-author">Editor</span></div>
+                        </div>
+                        <div class="article-body" id="lead-body">
+                            <!-- Content injected here -->
+                        </div>
+                    </article>
+
+                    <aside class="sidebar" id="sidebar-content">
+                        <!-- Sidebar widgets injected here -->
+                    </aside>
+
+                    <section class="secondary-stories" id="secondary-stories">
+                        <!-- Secondary stories injected here -->
+                    </section>
+                </main>
+
+                <footer class="paper-footer">
+                    <p>&copy; 2025 The Daily Chronicle. Printed in the Kingdom of Aethelgard.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
