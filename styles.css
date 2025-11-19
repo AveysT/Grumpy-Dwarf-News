@@ -290,6 +290,57 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+    #app-container {
+        flex-direction: column;
+    }
+
+    /* Newsstand becomes a top bar */
+    #newsstand {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #444;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        /* Horizontal scroll */
+        padding: 0.5rem;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .newsstand-title {
+        margin-bottom: 0;
+        margin-right: 1rem;
+        font-size: 1.2rem;
+        border-bottom: none;
+        white-space: nowrap;
+    }
+
+    .issue-preview {
+        min-width: 200px;
+        /* Fixed width for horizontal scrolling items */
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* Adjust Paper Wrapper */
+    #paper-wrapper {
+        padding: 0;
+        /* Remove padding to maximize space */
+    }
+
+    .paper-container {
+        padding: 1rem;
+        /* Reduce padding inside the paper */
+        box-shadow: none;
+        /* Remove shadow for flat look on mobile */
+        border: none;
+    }
+
+    /* Stack Content */
     .main-content {
         grid-template-columns: 1fr;
     }
@@ -307,5 +358,16 @@ body {
 
     .brand-title {
         font-size: 2.5rem;
+        line-height: 1.1;
+    }
+
+    .headline {
+        font-size: 2rem;
+    }
+
+    .meta-header {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
     }
 }
